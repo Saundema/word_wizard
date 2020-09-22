@@ -8,5 +8,5 @@ String wordFind(String word) {
       return searchWord;
     }
   }
-  return "X";
+  return "NF";
 }

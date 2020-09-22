@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/word_finder.dart';
-import '../models/random_letters.dart';
+//import '../models/random_letters.dart';
+import 'package:random_string/random_string.dart';
 
 class PlayScreen extends StatefulWidget {
   static const routeName = '/play';
@@ -8,8 +9,9 @@ class PlayScreen extends StatefulWidget {
 }
 
 class PlayScreenState extends State<PlayScreen> {
-  final word = wordFind("The");
-  List<String> randomLet = randomLetters();
+  final word = wordFind("What");
+  //var randomLet = randomLetters();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,31 +21,31 @@ class PlayScreenState extends State<PlayScreen> {
           Center(
               child: Row(children: [
             Container(
-              child:
-                  Text(randomLet[0].toString(), style: TextStyle(fontSize: 50)),
+              child: Text(randomAlpha(1).toUpperCase(),
+                  style: TextStyle(fontSize: 50)),
             ),
             Container(
-                child: Text(randomLet[1].toString(),
+                child: Text(randomAlpha(1).toUpperCase(),
                     style: TextStyle(fontSize: 50)),
                 alignment: Alignment.center),
             Container(
-                child: Text(randomLet[2].toString(),
+                child: Text(randomAlpha(1).toUpperCase(),
                     style: TextStyle(fontSize: 50)),
                 alignment: Alignment.center),
             Container(
-                child: Text(randomLet[3].toString(),
+                child: Text(randomAlpha(1).toUpperCase(),
                     style: TextStyle(fontSize: 50)),
                 alignment: Alignment.center),
             Container(
-                child: Text(randomLet[4].toString(),
+                child: Text(randomAlpha(1).toUpperCase(),
                     style: TextStyle(fontSize: 50)),
                 alignment: Alignment.center),
             Container(
-                child: Text(randomLet[5].toString(),
+                child: Text(randomAlpha(1).toUpperCase(),
                     style: TextStyle(fontSize: 50)),
                 alignment: Alignment.center),
             Container(
-                child: Text(randomLet[6].toString(),
+                child: Text(randomAlpha(1).toUpperCase(),
                     style: TextStyle(fontSize: 50)),
                 alignment: Alignment.center),
           ]))
