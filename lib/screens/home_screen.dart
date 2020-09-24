@@ -14,7 +14,7 @@ class HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         body: Column(
           children: <Widget>[
-            SizedBox(child: Image.asset('assets/logo.jpg')),
+            SizedBox(child: Image.asset('assets/Logo.jpg')),
             GestureDetector(
                 child: ListTile(
                     title: Center(child: Image.asset('assets/Start.jpg'))),
